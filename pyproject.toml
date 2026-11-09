@@ -1,0 +1,13 @@
+[project]
+name = "eve-optim"
+version = "0.1.0"
+description = "EvE: a four-member steady-state differential-evolution optimizer with an Adam fallback, as a torch.optim.Optimizer"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.0"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["eve*"]
